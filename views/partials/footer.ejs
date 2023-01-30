@@ -1,0 +1,101 @@
+
+
+<% if( messageActive === true ) { %>
+    <button type="button" id="liveToastBtn" hidden>Hidden button</button>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="mx-auto"> <%- messageContent %> </strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+<% } %>
+
+
+
+
+<div class="b-example-divider"></div>
+
+<div class="d-block  position-static bg-secondary lunos-section py-5">
+    <div class="container id=" icon-grid"">
+        <div class="my-3 p-3 bg-body rounded shadow-lg border mx-auto w-100">
+            <h2 class="pb-2 border-bottom">Contamos con tu apoyo!!</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <i class="fa-solid fa-car icon-footer-size"></i>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3 class="fw-bold mb-0 fs-4">Entrega a domicilio</h3>
+                        </div>
+                        <div class="col-lg-12 ">
+                            <p>Contamos con entregas hasta tu domicilio con un costo extra, para que
+                                desde la comodidad de tu casa disfrutes de nuestros productos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <i class="fa-regular fa-calendar icon-footer-size"></i>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3 class="fw-bold mb-0 fs-4">Repartimos el día sabádo</h3>
+                        </div>
+                        <div class="col-lg-12 ">
+                            <p>Entrega de pedidos bajo orden, no te olvides de hacer pedido para
+                                disfrutar un delicioso postre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <i class="fa-solid fa-house icon-footer-size"></i>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3 class="fw-bold mb-0 fs-4">Producto 100% artesanal</h3>
+                        </div>
+                        <div class="col-lg-12 ">
+                            <p>Gracias a tu contribución logras impulsar el comercio local.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+<!--FOOTER-->
+<div class="container lunos-section">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" /></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </footer>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+    integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<script src="js/index.js" charset="utf-8"></script>
+<script src="js/message.js" charset="utf-8"></script>
+
+</body>
+
+</html>

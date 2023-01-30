@@ -1,0 +1,54 @@
+<%- include('../partials/header') %>
+
+<main>
+
+    <div class="d-block  position-static bg-secondary lunos-section py-5">
+        <div class="container">
+            <!--Información personal-->
+            <div class="my-3 p-3 bg-body rounded shadow-lg border mx-auto w-50">
+                <div class="row mb-3">
+                    <div class="col-lg-2">
+                        <a class="link-success" href="/settings"><i
+                                class="fa-solid fa-arrow-left icon-reaction-size-m"></i></a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h6 class="lead fw-bold border-bottom pb-2 mb-0">Menú</h6>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="link-success" href="/"><i class="fa-solid fa-xmark icon-reaction-size-m"></i></a>
+                    </div>
+                </div>
+                <form action="/settings-menu" method="post" enctype="multipart/form-data">
+                    
+                    <div class="col-sm-12 mb-3">
+                        <label for="nombre" class="form-label">¿Cómo se llama el producto?</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="¿Cómo se llama el producto?" 
+                        value="<%-  %>" >
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <label for="descripcion" class="form-label">Especifique una breve reseña</label>
+                        <input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Breve descripción" 
+                        value="<%-  %>" >
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <label for="image" class="form-label"></label>
+                        <input class="form-control" type="file" id="image" name="image">
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-6">
+                            <button type="submit" class="btn btn-lg btn-success w-100 mx-0 mb-2">Guardar</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="button" class="btn btn-lg btn-light w-100"
+                                data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<%- include('../partials/footer') %>

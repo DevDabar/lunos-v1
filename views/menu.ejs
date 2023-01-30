@@ -1,0 +1,58 @@
+<%- include('partials/header') %>
+
+<main>
+    <div class="d-block  position-static bg-secondary lunos-section py-5">
+        <div class="container">
+            <!--Información personal-->
+            <div class="my-3 bg-body rounded shadow-lg border">
+                <div class="px-4 py-5 text-center lunos-section">
+                    <img class="d-block mx-auto mb-4 lunos-img" src="images/LUNOS-B.png" alt="luno-img">
+                    <h1 class="display-5 fw-bold">Bienvenido a la reposteria de luno</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">Lorem ipsum dolor sit amet, scelerisque volutpat tellus netus felis,
+                            maecenas sapien sapien at aliquam eu. Amet amet, elit bibendum, ipsum amet vestibulum
+                            rutrum
+                            ac vitae, proin metus voluptatum. Suspendisse consequat libero viverra ut justo morbi,
+                            ornare
+                            facilisi.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn btn-success btn-lg px-4 gap-3">Ver menú</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="my-3 p-3 bg-body rounded shadow-lg border">
+
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!--ITEM-->
+                    <% if(menu === undefined || menu === "") { %>
+                    <%} else { %>
+                    <%for(var i=0; i<menu.length; i++){%>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img width="252" height="225" class="card-img-top" width="100%" height="225"
+                                src="data:image/<%-menu[i].img.contentType%>;base64,<%-menu[i].img.data.toString('base64')%>"
+                                role="img">
+                            </img>
+                            <div class="card-body">
+                                <h5 class="card-content-h5"><%-menu[i].nombre%></h3>
+                                    <p class="lead card-text card-content-p">
+                                        <%-menu[i].descripcion%>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>                
+                    <% } %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<%- include('partials/footer') %>

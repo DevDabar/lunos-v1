@@ -1,0 +1,208 @@
+<%- include('partials/header') %>
+
+<main>
+    <div class="d-block  position-static bg-secondary lunos-section py-5">
+        <div class="container">
+            <!--Información personal-->
+            <div class="my-3 p-3 bg-body rounded shadow-lg border">
+                <h6 class="lead fw-bold border-bottom pb-2 mb-0">Información personal</h6>
+
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Foto</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+
+                            <% if(user.img.data === undefined || user.img.data === "") { %>
+                            <p class="pb-3 mb-0 small lh-sm">
+                                Agrega una foto para personalizar tu cuenta
+                            </p>
+                            <%} else { %>
+                            <img class="profile-little rounded-circle mb-3" src="data:image/<%=user.img.contentType%>;base64,
+                                <%=user.img.data.toString('base64')%>">
+                            <% } %>
+
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-image"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Nombre</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <% if(user.nombre === undefined || user.apellido === undefined || user.nombre === "" || user.apellido === "") { %>
+                                Agrega una un nombre para personalizar tu cuenta
+                                <%} else { %>
+                                <%-user.nombre + " " + user.apellido%>
+                                <% } %>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-basic"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--zona de pruebas-->
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Fecha de nacimiento</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <% if(user.dia === undefined || user.mes === undefined || user.año === undefined || user.dia === "" || user.mes === "" || user.año === "") { %>
+                                Especifique su fecha de nacimiento
+                                <%} else { %>
+                                <%-user.dia + " de " + user.mes + " de " + user.año%>
+                                <% } %>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-date"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Género</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <% if(user.genero === undefined || user.genero === "") { %>
+                                Especifique un género
+                                <%} else { %>
+                                <%-user.genero%>
+                                <% } %>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-gender"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Información de contacto-->
+            <div class="my-3 p-3 bg-body rounded shadow-lg border">
+                <h6 class="lead fw-bold border-bottom pb-2 mb-0">Información de contacto</h6>
+
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Correo electrónico</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <% if(user.email === undefined || user.email === "") { %>
+                                Especifique un correo electrónico
+                                <%} else { %>
+                                <%-user.email%>
+                                <% } %>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-email"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Teléfono</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <% if(user.telefono === undefined || user.telefono === "") { %>
+                                Especifique un teléfono de referencia
+                                <%} else { %>
+                                <%-user.telefono%>
+                                <% } %>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-phone"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Información de menú-->
+            <div class="my-3 p-3 bg-body rounded shadow-lg border">
+                <h6 class="lead fw-bold border-bottom pb-2 mb-0">Información de menú</h6>
+
+                <% if(menu === undefined || menu === "") { %>
+                <%} else { %>
+                <%for(var i=0; i<menu.length; i++){%>
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@<%-menu[i].nombre %></strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <%-menu[i].descripcion %>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a href="/<%-String(menu[i]._id)%>&1"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="/<%-String(menu[i]._id)%>&2"><i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%}%>                
+                <% } %>
+
+
+
+                <div class="d-flex text-muted pt-3 justify-content-center settings-hover">
+                    <div class="row border-bottom container-fluid">
+                        <div class="col-lg-2">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                <strong class="text-gray-dark">@Menú</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="pb-3 mb-0 small lh-sm">
+                                Agregue un producto
+                            </p>
+                        </div>
+                        <div class="col-lg-2 pb-3 mb-0 small lh-sm">
+                            <a href="/settings-menu"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<%- include('partials/footer') %>

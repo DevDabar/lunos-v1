@@ -1,0 +1,59 @@
+<%- include('../partials/header') %>
+
+<main>
+
+    <div class="d-block  position-static bg-secondary lunos-section py-5">
+        <div class="container">
+            <!--Información personal-->
+            <div class="my-3 p-3 bg-body rounded shadow-lg border mx-auto w-50">
+                <div class="row mb-3">
+                    <div class="col-lg-2">
+                        <a class="link-success" href="/settings"><i
+                                class="fa-solid fa-arrow-left icon-reaction-size-m"></i></a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h6 class="lead fw-bold border-bottom pb-2 mb-0">Configurar cuenta</h6>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="link-success" href="/"><i class="fa-solid fa-xmark icon-reaction-size-m"></i></a>
+                    </div>
+                </div>
+                <form action="/settings-basic" method="post">
+                    <div class="col-sm-12 mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre" 
+                        value="<%- user.nombre %>" >
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingresa tus apellidos"
+                            value="<%- user.apellido %>" >
+                    </div>
+
+
+                    <div class="col-12 mb-3">
+                        <label for="username" class="form-label">Nombre de usuario</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" name="username" id="username"
+                                placeholder="Ingresa un nombre de usuario" value="<%- user.username %>">
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-6">
+                            <button type="submit" class="btn btn-lg btn-success w-100 mx-0 mb-2">Guardar</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="button" class="btn btn-lg btn-light w-100"
+                                data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<%- include('../partials/footer') %>

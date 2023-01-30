@@ -1,0 +1,161 @@
+body {
+    min-height: 75rem;
+    /*padding-top: 4.5rem;*/
+    padding-bottom: 0px;    
+    text-align: center;
+}
+
+.lunos-img {
+    width: 300px;
+    height: 300px;
+}
+
+.tortuga-navbar-img{
+    width: 35px;
+    height: 35px;
+}
+.profile-little {
+    width: 50px;
+    height: 50px;
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+.lunos-section {
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+.card-content-p {
+    text-align: left;
+}
+
+.card-content-h5 {
+    font-family: "Ubuntu";
+    font-weight: bold;
+}
+
+.modal-title-h1 {
+    text-align: center;
+}
+
+.modal-sheet .modal-dialog {
+    width: 380px;
+    transition: bottom .75s ease-in-out;
+}
+
+.modal-sheet .modal-footer {
+    padding-bottom: 2rem;
+}
+
+.modal-alert .modal-dialog {
+    width: 380px;
+}
+
+.modal-tour .modal-dialog {
+    width: 380px;
+}
+
+.corusel-img {
+    
+    width: 100vw;
+    height: 100vh;
+    /*    
+    object-fit: cover;
+    object-position: center;
+    */    
+}
+
+.home-img-profile {
+    width: 140px;
+    height: 140px;
+}
+.home-img-500 {
+    width: 500px;
+    height: 500px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 225px;
+}
+
+.icon-reaction-size {
+    font-size: 50px;
+}
+
+.icon-reaction-size-m {
+    font-size: 30px;
+}
+
+.icon-reaction-heart:hover, .icon-reaction-heart {
+    color: red;
+}
+
+.icon-reaction-comment:hover, .icon-reaction-send:hover, .icon-reaction-comment, .icon-reaction-send {
+    color: green;
+}
+.icon-reaction-bookmark:hover, .icon-reaction-bookmark {
+    color: brown;
+}
+
+.icon-footer-size {
+    font-size: 50px;
+}
+
+.settings-hover:hover {
+    background-color: #FFF2F2;  
+}
+
+

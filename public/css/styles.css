@@ -1,0 +1,144 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+p{
+    font-weight: bold;
+    line-height: 1.5;
+}
+.p1{
+    color: #fff;
+    margin: 0;
+  
+}
+.p2{
+    color: black;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+.container-fluid-corousel {
+    padding: 0% 0%;
+}
+.container-fluid-header {
+    padding: 0% 20%;
+}
+.container-fluid-footer {
+    padding: 3% 25%;
+}
+.nav-item{
+    padding: 0 18px;
+}
+
+.lunos-section{
+    background-color: #FFF0B3;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+.lunos-img {
+    width: 300px;
+    height: 300px;
+}
+.colored-section{
+    background-color: #1C82AD;
+    background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
+}
+.white-section{
+    background-color: #03C988;
+    /*background-image: url(http://www.transparenttextures.com/patterns/cubes.png);*/
+}
+.icon{
+    color: #03C988;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #03C988;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+
+.dragon-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100% 100%;
+}
+
+.profile_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100% 100%;
+}
+
+.hobbies_img {
+    height: 150px;
+    width: 150px;
+    float: center;
+    padding-bottom: 10px;
+}
+
+.list-group-item {
+    background-color: #03C988;
+    border-style: none;
+}
+hr{
+    background-color: #03C988;
+    border-style: none;
+    border-top: dotted;
+    border-color: #333333;
+    border-width: 5px;
+    width: 5%;
+}
+.hr-row {
+    padding: 30px;
+}
+#skills .container-fluid {
+    padding-top: 5rem;
+}
+.skills-title, projects-title {
+    padding-bottom: 30px;
+}
+
+.skills-img {
+    width: 100px;
+    height: 100px;
+}
+.coming-soon {
+    width: 200px; 
+    height: 200px; 
+    background-color: #EDF01E;
+    background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+    border-radius: 100% 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.carousel-img {
+    width: 100%;
+}
+
+tbody, thead {
+    border-bottom-width: 30px;
+    border-color: transparent;
+}
+
+.menu-img {
+    width: 300px;
+    height: 300px;
+}
+
+.menu-section {
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    
+}
