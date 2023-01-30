@@ -65,7 +65,7 @@ app.use(passport.session());
 //Start conection with database mongo using mongoose
 main().catch(err => console.log(err));
 async function main() {
-    await mongoose.connect("mongodb+srv://admin:pvTfpa8iWA7EG7a2@atlascluster.cyjvuya.mongodb.net/lunosDB");
+    await mongoose.connect(process.env.URL_DB);
     console.log("Database conected");
 }
 
